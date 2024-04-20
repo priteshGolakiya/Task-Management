@@ -1,0 +1,27 @@
+.modal-comp {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+.dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0rem 0rem 1rem rgba(37, 38, 41, 0.12);
+  padding: 4.25rem 2rem;
+}
+
+.dialog:focus {
+  outline: none;
+}
