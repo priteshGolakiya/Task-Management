@@ -20,6 +20,7 @@ router.get(
   authMiddleWare,
   asyncHandler(getSingleTask)
 );
+
 router.put("/:id", authenticateUser, authMiddleWare, asyncHandler(updateTask));
 router.delete(
   "/:id",

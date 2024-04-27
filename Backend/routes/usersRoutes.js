@@ -25,7 +25,7 @@ const errorHandler = (err, req, res, next) => {
 // router.post("/", asyncHandler(createUser));
 router.get("/:id", asyncHandler(getSingleUser));
 router.put("/:id", asyncHandler(updateUser));
-router.delete("/:id", asyncHandler(deleteUser));
+// router.delete("/:id", asyncHandler(deleteUser));
 
 router.get("/", asyncHandler(getAllUsers));
 router.post("/signup", signup);

@@ -1,0 +1,264 @@
+/* Main container */
+.todoApp {
+  padding: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Updated CSS for the input section */
+.inputSection {
+  margin-bottom: 20px;
+  background-color: #000; /* Black background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Style for the form inputs in the input section */
+.inputSection form input,
+.inputSection form select,
+.inputSection form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 16px;
+  border: 1px solid #fff; /* White border */
+  margin-bottom: 10px;
+  background-color: #444; /* Dark grey background */
+  color: #fff; /* White text color */
+}
+
+.todoApp form input[type="text"] {
+  background-color: #000; /* Black background on focus */
+  color: #fff; /* White text color on focus */
+  border-color: #007bff;
+}
+
+/* Style for the add button in the input section */
+.inputSection form button.add {
+  padding: 12px 24px;
+  background-color: #007bff; /* Submit: blue */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputSection form button.add:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+form button.add {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* CSS for the select element */
+.selector {
+  margin: 15px 10px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  background-color: #444;
+  color: #fff;
+}
+
+/* Style for the options within the select dropdown */
+.selector option {
+  background-color: #000; /* Black background for options */
+  color: #fff; /* White text color for options */
+}
+
+/* Style when the select element is focused */
+.selector:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Custom focus border color */
+}
+
+/* Todos container */
+.todos {
+  margin-bottom: 20px;
+}
+
+.todoList {
+  margin-bottom: 20px;
+}
+
+/* Todo Table Styles */
+.todoTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.todoTable th,
+.todoTable td {
+  padding: 12px;
+  text-align: left;
+  color: #fff;
+  font-weight: bold;
+}
+
+.todoTable th {
+  background-color: #222;
+}
+
+.todoTable td {
+  border-bottom: 1px solid #444;
+}
+
+.todoItem:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Delete & Edit Button Styles */
+.deleteButton,
+.editButton {
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid #fff;
+}
+
+.deleteButton:hover,
+.editButton:hover {
+  background-color: #dc3545; /* Delete: red */
+  color: #fff;
+  cursor: pointer;
+}
+
+.editButton {
+  background-color: #35dc64; /* Edit: green */
+  border: 2px solid #fff;
+}
+
+/* Modal Styles */
+.formContainer {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.formContainer h2 {
+  margin-bottom: 20px;
+}
+
+.formContainer label {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.formContainer input,
+.formContainer select {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  font-size: 16px;
+  background-color: #444;
+  color: #fff;
+}
+
+.formContainer textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  font-size: 16px;
+  background-color: #444;
+  color: #fff;
+  resize: none; /* Allow vertical resizing */
+  min-height: 100px; /* Set a minimum height */
+  max-height: 300px; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scroll if needed */
+  max-width: 100%;
+}
+
+.formContainer button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #007bff; /* Submit: blue */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.formContainer button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.closeButton {
+  margin-left: auto;
+  border-radius: 50%;
+  color: white;
+  background-color: #dc3545; /* Close: red */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  background-color: rgb(186, 0, 0);
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.formGroup label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  flex: 3;
+  padding: 13px;
+  border-radius: 16px;
+  border: 2px solid #ccc;
+}
+
+.formGroup textarea {
+  min-height: 100px;
+}
+
+/* Add this class for completed status */
+.completedStatus {
+  background-color: #35dc64; /* Green background color */
+  color: #fff; /* White text color */
+}
+.completedStatus:hover {
+  background-color: #28a745;
+}
+
+.formGroup .selector:hover {
+  cursor: pointer;
+}
+
