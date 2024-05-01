@@ -27,7 +27,7 @@ const createTask = async (req, res, next) => {
 
     const taskData = {
       assignedTo: foundUser._id,
-      userName: foundUser.name, // Corrected field name here
+      userName: foundUser.name,
       userEmail: foundUser.email,
       title,
       description,

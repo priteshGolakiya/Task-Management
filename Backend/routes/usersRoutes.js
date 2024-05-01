@@ -27,6 +27,7 @@ router.get("/:id", asyncHandler(getSingleUser));
 router.put("/:id", asyncHandler(updateUser));
 // router.delete("/:id", asyncHandler(deleteUser));
 
+
 router.get("/", asyncHandler(getAllUsers));
 router.post("/signup", signup);
 router.post("/login", login);

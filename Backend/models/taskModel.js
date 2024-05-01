@@ -8,7 +8,6 @@ const taskSchema = new mongoose.Schema(
       required: true,
     },
     userName: {
-      // Corrected field name here
       type: String,
       required: true,
     },

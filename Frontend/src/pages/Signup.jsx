@@ -11,7 +11,13 @@ const Signup = () => {
     email: "",
     password: "",
   });
-
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
   const { name, email, password } = formData;
 
   const validateForm = () => {
@@ -49,14 +55,6 @@ const Signup = () => {
         toast.error("Signup failed. Please try again.");
       }
     }
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
   };
 
   return (
